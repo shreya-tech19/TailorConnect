@@ -1,0 +1,367 @@
+/* =========================================================
+   TAILORCONNECT NAVBAR
+   Premium Tailoring Theme
+========================================================= */
+
+.navbar {
+  width: 100%;
+  height: 82px;
+  padding: 0 6%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #fffdfb;
+  border-bottom: 1px solid #eaded9;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  text-decoration: none;
+  color: #35272d;
+
+  font-family: var(--sans);
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+
+  flex-shrink: 0;
+}
+
+.logo-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #b95770;
+  color: white;
+
+  border-radius: 10px;
+
+  font-size: 21px;
+}
+
+/* =========================================================
+   NAVIGATION LINKS
+========================================================= */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+.nav-links a {
+  position: relative;
+
+  text-decoration: none;
+  color: #74666b;
+
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 500;
+
+  transition: color 0.25s ease;
+}
+
+.nav-links a:hover {
+  color: #b95770;
+}
+
+.nav-links a.active {
+  color: #b95770;
+  font-weight: 600;
+}
+
+.nav-links a.active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: -10px;
+
+  height: 2px;
+
+  background: #b95770;
+  border-radius: 10px;
+}
+
+/* =========================================================
+   NAV ACTIONS
+========================================================= */
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  min-width: 150px;
+}
+
+/* =========================================================
+   LOGIN BUTTON
+========================================================= */
+
+.login-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 90px;
+  height: 42px;
+
+  padding: 0 20px;
+
+  border: 1px solid #b95770;
+  border-radius: 8px;
+
+  background: transparent;
+  color: #b95770;
+
+  text-decoration: none;
+
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 600;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+
+  box-sizing: border-box;
+}
+
+.login-btn:hover {
+  background: #b95770;
+  color: white;
+
+  transform: translateY(-1px);
+
+  box-shadow: 0 8px 20px rgba(185, 87, 112, 0.18);
+}
+
+/* =========================================================
+   LOGGED-IN CUSTOMER
+========================================================= */
+
+.logged-in-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-profile {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 7px 10px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  color: #5f4b53;
+
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 500;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.user-profile:hover {
+  background: #f8eeeb;
+  color: #b95770;
+}
+
+.user-icon {
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f3e2e7;
+  color: #b95770;
+
+  font-size: 14px;
+}
+
+.user-name {
+  max-width: 100px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* =========================================================
+   LOGOUT
+========================================================= */
+
+.logout-btn {
+  height: 36px;
+
+  padding: 0 13px;
+
+  border: 1px solid #dfc7ce;
+  border-radius: 7px;
+
+  background: transparent;
+  color: #8d5363;
+
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.logout-btn:hover {
+  background: #b95770;
+  border-color: #b95770;
+  color: #ffffff;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+  .navbar {
+    padding: 0 4%;
+  }
+
+  .nav-links {
+    gap: 24px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .nav-actions {
+    min-width: 140px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 850px) {
+  .navbar {
+    height: 72px;
+    padding: 0 5%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .logo {
+    font-size: 19px;
+  }
+
+  .logo-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 19px;
+  }
+
+  .nav-actions {
+    min-width: auto;
+  }
+
+  .login-btn {
+    min-width: auto;
+    height: 40px;
+    padding: 0 16px;
+  }
+
+  .logged-in-user {
+    gap: 7px;
+  }
+
+  .user-profile {
+    padding: 5px 7px;
+  }
+
+  .user-name {
+    max-width: 75px;
+  }
+
+  .logout-btn {
+    height: 34px;
+    padding: 0 10px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 450px) {
+  .logo {
+    font-size: 17px;
+  }
+
+  .logo-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+
+  .login-btn {
+    font-size: 13px;
+  }
+
+  .user-name {
+    display: none;
+  }
+
+  .user-profile {
+    padding: 4px;
+  }
+
+  .logged-in-user {
+    gap: 5px;
+  }
+
+  .logout-btn {
+    font-size: 11px;
+    padding: 0 9px;
+  }
+}

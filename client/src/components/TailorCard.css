@@ -1,0 +1,238 @@
+.tailor-card {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #eee5ed;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(72, 48, 77, 0.07);
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease,
+      border-color 0.25s ease;
+  }
+  
+  .tailor-card:hover {
+    transform: translateY(-7px);
+    border-color: #e2cde9;
+    box-shadow: 0 20px 42px rgba(72, 48, 77, 0.13);
+  }
+  
+  /* ================= IMAGE ================= */
+  
+  .tailor-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 235px;
+    overflow: hidden;
+    background: #f4edf5;
+  }
+  
+  .tailor-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+  
+  .tailor-card:hover .tailor-image {
+    transform: scale(1.04);
+  }
+  
+  /* ================= AVAILABILITY ================= */
+  
+  .tailor-availability {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+  
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+  
+    padding: 7px 11px;
+  
+    border-radius: 20px;
+  
+    font-size: 11px;
+    font-weight: 700;
+  
+    backdrop-filter: blur(8px);
+  }
+  
+  .tailor-availability.available {
+    background: rgba(235, 249, 240, 0.95);
+    color: #287846;
+  }
+  
+  .tailor-availability.unavailable {
+    background: rgba(252, 235, 234, 0.95);
+    color: #b13c35;
+  }
+  
+  .availability-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .tailor-availability.available .availability-dot {
+    background: #35a85a;
+  }
+  
+  .tailor-availability.unavailable .availability-dot {
+    background: #d9534f;
+  }
+  
+  /* ================= CONTENT ================= */
+  
+  .tailor-content {
+    padding: 22px;
+  }
+  
+  /* ================= HEADING ================= */
+  
+  .tailor-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .tailor-card h2 {
+    margin: 0;
+    color: #29232f;
+    font-size: 21px;
+    line-height: 1.2;
+  }
+  
+  .tailor-owner {
+    margin-top: 5px !important;
+    color: #817883 !important;
+    font-size: 12px !important;
+  }
+  
+  /* ================= RATING ================= */
+  
+  .tailor-rating {
+    flex-shrink: 0;
+  
+    padding: 6px 9px;
+  
+    border-radius: 8px;
+  
+    background: #fff5df;
+    color: #9b6a1e;
+  
+    font-size: 12px;
+    font-weight: 700;
+  }
+  
+  /* ================= DETAILS ================= */
+  
+  .tailor-details {
+    margin-top: 17px;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  
+  .tailor-details p {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+  
+    margin: 0;
+  
+    color: #756d78;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  
+  .tailor-details p span {
+    width: 23px;
+    height: 23px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 7px;
+  
+    background: #f0e2f7;
+    color: #9743c9;
+  
+    font-size: 12px;
+  }
+  
+  /* ================= BUTTON ================= */
+  
+  .tailor-btn {
+    width: 100%;
+  
+    margin-top: 19px;
+  
+    padding: 12px 15px;
+  
+    border: none;
+    border-radius: 9px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  
+    background: #a746e3;
+    color: #ffffff;
+  
+    font-size: 13px;
+    font-weight: 700;
+  
+    cursor: pointer;
+  
+    transition:
+      background 0.2s ease,
+      transform 0.2s ease;
+  }
+  
+  .tailor-btn:hover {
+    background: #9137ca;
+  }
+  
+  .tailor-btn span {
+    transition: transform 0.2s ease;
+  }
+  
+  .tailor-btn:hover span {
+    transform: translateX(4px);
+  }
+  
+  /* ================= TABLET ================= */
+  
+  @media (max-width: 700px) {
+    .tailor-card {
+      max-width: 420px;
+      margin: 0 auto;
+    }
+  
+    .tailor-image-wrapper {
+      height: 225px;
+    }
+  }
+  
+  /* ================= MOBILE ================= */
+  
+  @media (max-width: 480px) {
+    .tailor-image-wrapper {
+      height: 210px;
+    }
+  
+    .tailor-content {
+      padding: 18px;
+    }
+  
+    .tailor-card h2 {
+      font-size: 19px;
+    }
+  }

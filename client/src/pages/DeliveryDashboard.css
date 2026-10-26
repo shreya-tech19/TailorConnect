@@ -1,0 +1,799 @@
+.delivery-dashboard {
+    min-height: 100vh;
+    background: #f7f4f2;
+    color: #35272d;
+  }
+  
+  /* =========================================
+     TOP BAR
+  ========================================= */
+  
+  .delivery-topbar {
+    height: 78px;
+    background: #ffffff;
+    border-bottom: 1px solid #ebe4e0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+  }
+  
+  .delivery-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .delivery-brand-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 11px;
+    background: #c45b78;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+  }
+  
+  .delivery-brand h2 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 21px;
+  }
+  
+  .delivery-brand span {
+    display: block;
+    margin-top: 2px;
+    color: #8d7c81;
+    font-size: 11px;
+    letter-spacing: 0.8px;
+  }
+  
+  .delivery-topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  
+  .delivery-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .delivery-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #eee4e7;
+    color: #35272d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+  }
+  
+  .delivery-user strong {
+    display: block;
+    font-size: 13px;
+  }
+  
+  .delivery-user span {
+    display: block;
+    margin-top: 2px;
+    font-size: 11px;
+    color: #918287;
+  }
+  
+  .delivery-logout {
+    border: 1px solid #d9cdca;
+    background: #ffffff;
+    color: #35272d;
+    border-radius: 8px;
+    padding: 9px 17px;
+    font-family: inherit;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .delivery-logout:hover {
+    background: #35272d;
+    color: #ffffff;
+  }
+  
+  /* =========================================
+     MAIN
+  ========================================= */
+  
+  .delivery-main {
+    width: min(1180px, 90%);
+    margin: 0 auto;
+    padding: 48px 0 70px;
+  }
+  
+  .delivery-welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .delivery-eyebrow,
+  .delivery-section-label {
+    margin: 0 0 8px;
+    color: #a18d94;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.7px;
+  }
+  
+  .delivery-welcome h1 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: clamp(30px, 4vw, 43px);
+    font-weight: 500;
+  }
+  
+  .delivery-welcome p:not(.delivery-eyebrow) {
+    margin: 10px 0 0;
+    color: #75666b;
+    font-size: 14px;
+  }
+  
+  .delivery-online {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background: #eefaf4;
+    color: #087a4b;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  
+  .delivery-online span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #10a36a;
+  }
+  
+  /* =========================================
+     MESSAGES
+  ========================================= */
+  
+  .delivery-message {
+    margin-bottom: 22px;
+    padding: 13px 17px;
+    border-radius: 10px;
+    font-size: 13px;
+  }
+  
+  .delivery-message.success {
+    background: #ecfdf5;
+    color: #047857;
+    border: 1px solid #c8f1df;
+  }
+  
+  .delivery-message.error {
+    background: #fff1f2;
+    color: #be123c;
+    border: 1px solid #ffd5dc;
+  }
+  
+  /* =========================================
+     STATS
+  ========================================= */
+  
+  .delivery-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 45px;
+  }
+  
+  .delivery-stat-card {
+    background: #ffffff;
+    border: 1px solid #eee7e3;
+    border-radius: 14px;
+    padding: 21px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .stat-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  
+  .stat-icon.new {
+    background: #f6e9ed;
+    color: #a94665;
+  }
+  
+  .stat-icon.active {
+    background: #f1ece9;
+    color: #654e53;
+  }
+  
+  .stat-icon.completed {
+    background: #eaf8f1;
+    color: #07804d;
+  }
+  
+  .stat-icon.today {
+    background: #f8f2df;
+    color: #8b6a19;
+  }
+  
+  .delivery-stat-card span {
+    display: block;
+    color: #8c7d82;
+    font-size: 11px;
+  }
+  
+  .delivery-stat-card strong {
+    display: block;
+    margin-top: 4px;
+    font-size: 24px;
+  }
+  
+  /* =========================================
+     SECTIONS
+  ========================================= */
+  
+  .delivery-section {
+    margin-bottom: 48px;
+  }
+  
+  .delivery-section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 18px;
+  }
+  
+  .delivery-section-heading h2 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-weight: 500;
+  }
+  
+  .delivery-section-heading p:not(.delivery-section-label) {
+    margin: 7px 0 0;
+    color: #807277;
+    font-size: 13px;
+  }
+  
+  .delivery-count {
+    min-width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #35272d;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  
+  .active-count {
+    background: #c45b78;
+  }
+  
+  .completed-count {
+    background: #087a4b;
+  }
+  
+  /* =========================================
+     ACTIVE DELIVERY
+  ========================================= */
+  
+  .active-delivery-card {
+    background: #ffffff;
+    border: 1px solid #e9dfdb;
+    border-radius: 18px;
+    padding: 27px;
+    box-shadow: 0 12px 35px rgba(53, 39, 45, 0.06);
+  }
+  
+  .active-delivery-top,
+  .delivery-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .delivery-order-number {
+    color: #a08e94;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+  }
+  
+  .active-delivery-top h3,
+  .delivery-card-header h3 {
+    margin: 6px 0 0;
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-weight: 500;
+  }
+  
+  .delivery-status {
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 11px;
+    border-radius: 20px;
+    background: #f2efed;
+    color: #66575c;
+    font-size: 10px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  
+  .delivery-status.ready {
+    background: #f8edf1;
+    color: #a94665;
+  }
+  
+  .delivery-status.active {
+    background: #f1ece9;
+    color: #654e53;
+  }
+  
+  .delivery-status.reached {
+    background: #fff6df;
+    color: #856715;
+  }
+  
+  .delivery-status.completed {
+    background: #eaf8f1;
+    color: #087a4b;
+  }
+  
+  /* =========================================
+     CUSTOMER INFORMATION
+  ========================================= */
+  
+  .customer-delivery-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    gap: 15px;
+    margin: 25px 0;
+    padding: 18px;
+    border-radius: 12px;
+    background: #faf8f7;
+  }
+  
+  .customer-delivery-info span,
+  .delivery-card-details span {
+    display: block;
+    margin-bottom: 6px;
+    color: #a08e94;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+  }
+  
+  .customer-delivery-info strong,
+  .delivery-card-details strong {
+    display: block;
+    color: #45383d;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  
+  /* =========================================
+     PROGRESS
+  ========================================= */
+  
+  .delivery-progress {
+    display: flex;
+    align-items: flex-start;
+    margin: 28px 5px;
+  }
+  
+  .progress-item {
+    flex: 1;
+    position: relative;
+    text-align: center;
+  }
+  
+  .progress-dot {
+    width: 27px;
+    height: 27px;
+    margin: 0 auto 7px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 2px solid #d8cfcc;
+    color: #a4969a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .progress-dot.completed {
+    background: #35272d;
+    border-color: #35272d;
+    color: #ffffff;
+  }
+  
+  .progress-item span {
+    font-size: 10px;
+    color: #8c7d82;
+  }
+  
+  .progress-line {
+    position: absolute;
+    top: 13px;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background: #ded7d4;
+    z-index: 1;
+  }
+  
+  .progress-line.completed {
+    background: #35272d;
+  }
+  
+  /* =========================================
+     ACTION
+  ========================================= */
+  
+  .active-delivery-action {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  .delivery-primary-button {
+    border: none;
+    border-radius: 9px;
+    padding: 12px 22px;
+    background: #35272d;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  .delivery-primary-button:hover {
+    background: #4a363e;
+    transform: translateY(-1px);
+  }
+  
+  .delivery-primary-button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+    transform: none;
+  }
+  
+  /* =========================================
+     NEW ORDERS
+  ========================================= */
+  
+  .delivery-orders-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  
+  .delivery-order-card {
+    background: #ffffff;
+    border: 1px solid #eee7e3;
+    border-radius: 16px;
+    padding: 22px;
+    transition: 0.2s ease;
+  }
+  
+  .delivery-order-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(53, 39, 45, 0.06);
+  }
+  
+  .delivery-card-details {
+    display: grid;
+    gap: 14px;
+    margin-top: 23px;
+  }
+  
+  .delivery-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid #eee7e3;
+  }
+  
+  .delivery-card-footer > span {
+    color: #817378;
+    font-size: 11px;
+  }
+  
+  /* =========================================
+     OTP
+  ========================================= */
+  
+  .otp-section {
+    margin-top: 5px;
+    width: 100%;
+  }
+  
+  .otp-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  
+  .otp-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: #f8edf1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .otp-heading strong {
+    display: block;
+    font-size: 13px;
+  }
+  
+  .otp-heading p {
+    margin: 3px 0 0;
+    color: #8a7a80;
+    font-size: 11px;
+  }
+  
+  .otp-controls {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .otp-controls input {
+    width: 130px;
+    border: 1px solid #d9cdca;
+    border-radius: 9px;
+    padding: 11px;
+    text-align: center;
+    letter-spacing: 6px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #35272d;
+    outline: none;
+  }
+  
+  .otp-controls input:focus {
+    border-color: #35272d;
+  }
+  
+  /* =========================================
+     EMPTY
+  ========================================= */
+  
+  .delivery-empty {
+    padding: 60px 20px;
+    background: #ffffff;
+    border: 1px solid #eee7e3;
+    border-radius: 16px;
+    text-align: center;
+  }
+  
+  .empty-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 14px;
+    border-radius: 50%;
+    background: #eaf8f1;
+    color: #087a4b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+  }
+  
+  .delivery-empty h3 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 20px;
+  }
+  
+  .delivery-empty p {
+    margin: 7px 0 0;
+    color: #85767b;
+    font-size: 13px;
+  }
+  
+  /* =========================================
+     COMPLETED
+  ========================================= */
+  
+  .completed-list {
+    background: #ffffff;
+    border: 1px solid #eee7e3;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  
+  .completed-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 17px 20px;
+    border-bottom: 1px solid #eee7e3;
+  }
+  
+  .completed-row:last-child {
+    border-bottom: none;
+  }
+  
+  .completed-check {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #eaf8f1;
+    color: #087a4b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+  }
+  
+  .completed-info {
+    flex: 1;
+  }
+  
+  .completed-info strong {
+    display: block;
+    font-size: 13px;
+  }
+  
+  .completed-info span {
+    display: block;
+    margin-top: 3px;
+    color: #8c7d82;
+    font-size: 11px;
+  }
+  
+  .completed-status {
+    color: #087a4b;
+    font-size: 10px;
+    font-weight: 700;
+  }
+  
+  /* =========================================
+     LOADING
+  ========================================= */
+  
+  .delivery-loading {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #77686d;
+  }
+  
+  .delivery-spinner {
+    width: 34px;
+    height: 34px;
+    border: 3px solid #e6dedd;
+    border-top-color: #35272d;
+    border-radius: 50%;
+    animation: delivery-spin 0.8s linear infinite;
+    margin-bottom: 12px;
+  }
+  
+  @keyframes delivery-spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* =========================================
+     RESPONSIVE
+  ========================================= */
+  
+  @media (max-width: 900px) {
+    .delivery-stats {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .delivery-orders-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .customer-delivery-info {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    .delivery-topbar {
+      padding: 0 5%;
+    }
+  
+    .delivery-user {
+      display: none;
+    }
+  
+    .delivery-main {
+      width: 92%;
+      padding-top: 30px;
+    }
+  
+    .delivery-welcome {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .delivery-stats {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .delivery-stat-card {
+      padding: 15px;
+    }
+  
+    .delivery-progress {
+      overflow-x: auto;
+      padding-bottom: 8px;
+    }
+  
+    .progress-item {
+      min-width: 90px;
+    }
+  
+    .active-delivery-top,
+    .delivery-card-header,
+    .delivery-card-footer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .active-delivery-action {
+      justify-content: stretch;
+    }
+  
+    .active-delivery-action .delivery-primary-button {
+      width: 100%;
+    }
+  
+    .otp-controls {
+      flex-direction: column;
+    }
+  
+    .otp-controls input {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    .otp-controls .delivery-primary-button {
+      width: 100%;
+    }
+  }

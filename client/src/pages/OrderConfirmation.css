@@ -1,0 +1,133 @@
+.confirmation-page {
+    min-height: calc(100vh - 74px);
+    background: #f7f7f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+  }
+  
+  .confirmation-card {
+    width: 100%;
+    max-width: 700px;
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 22px;
+    padding: 45px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .confirmation-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #e8f8ef;
+    color: #238447;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    font-weight: 700;
+  }
+  
+  .confirmation-label {
+    margin: 0 0 10px;
+    color: #8a5a44;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+  }
+  
+  .confirmation-card h1 {
+    margin: 0;
+    color: #222;
+    font-size: 32px;
+  }
+  
+  .confirmation-message {
+    max-width: 560px;
+    margin: 18px auto 30px;
+    color: #707070;
+    line-height: 1.7;
+  }
+  
+  .confirmation-info {
+    text-align: left;
+    background: #f7f7f5;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+  }
+  
+  .info-item {
+    display: flex;
+    gap: 15px;
+    padding: 17px 5px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .info-item:last-child {
+    border-bottom: none;
+  }
+  
+  .info-item > span {
+    font-size: 22px;
+  }
+  
+  .info-item strong {
+    color: #222;
+  }
+  
+  .info-item p {
+    margin: 5px 0 0;
+    color: #777;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  
+  .confirmation-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .primary-confirmation-btn,
+  .secondary-confirmation-btn {
+    padding: 13px 22px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .primary-confirmation-btn {
+    background: #222;
+    color: white;
+  }
+  
+  .secondary-confirmation-btn {
+    background: white;
+    color: #222;
+    border: 1px solid #ddd;
+  }
+  
+  @media (max-width: 600px) {
+    .confirmation-card {
+      padding: 30px 20px;
+    }
+  
+    .confirmation-card h1 {
+      font-size: 26px;
+    }
+  
+    .confirmation-actions {
+      flex-direction: column;
+    }
+  
+    .primary-confirmation-btn,
+    .secondary-confirmation-btn {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }

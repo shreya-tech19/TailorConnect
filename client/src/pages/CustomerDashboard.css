@@ -1,0 +1,43 @@
+.dashboard{
+    padding:60px 8%;
+    background:#f8fafc;
+    min-height:100vh;
+}
+
+.dashboard h1{
+    text-align:center;
+    margin-bottom:40px;
+    color:#1e3a8a;
+}
+
+.order-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.order-card{
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.order-card h2{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.order-card p{
+    margin:10px 0;
+    color:#555;
+}
+
+.status{
+    margin-left:10px;
+    background:#fde68a;
+    color:#92400e;
+    padding:5px 12px;
+    border-radius:20px;
+    font-weight:bold;
+}

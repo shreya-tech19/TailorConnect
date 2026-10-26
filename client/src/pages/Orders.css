@@ -1,0 +1,386 @@
+/* ==============================
+   ORDERS PAGE
+================================ */
+
+.orders-page {
+  min-height: 100vh;
+  padding: 55px 7%;
+  background: #f5f7fb;
+}
+
+
+/* ==============================
+   PAGE HEADER
+================================ */
+
+.orders-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.orders-label {
+  font-size: 13px !important;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #6b7280 !important;
+  margin: 0 0 8px !important;
+}
+
+.orders-header h1 {
+  font-size: 42px;
+  color: #111827;
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+
+.orders-subtitle {
+  font-size: 16px !important;
+  color: #6b7280 !important;
+  margin: 0 !important;
+}
+
+
+/* ==============================
+   ORDERS CONTAINER
+================================ */
+
+.orders-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+/* ==============================
+   ORDER CARD
+================================ */
+
+.order-card {
+  background: #ffffff;
+  padding: 30px;
+  margin-bottom: 25px;
+  border-radius: 18px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.07);
+  border: 1px solid #eef0f4;
+}
+
+
+/* ==============================
+   ORDER HEADER
+================================ */
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.order-title {
+  min-width: 0;
+}
+
+.order-small-label {
+  font-size: 12px !important;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #9ca3af !important;
+  margin: 0 0 7px !important;
+}
+
+.order-header h2 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 700;
+  color: #1e3a8a;
+  line-height: 1.3;
+}
+
+
+/* ==============================
+   STATUS BADGE
+================================ */
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 9px 16px;
+
+  border-radius: 999px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+
+/* Pending */
+
+.pending {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+
+/* Accepted */
+
+.accepted {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+
+/* Rejected */
+
+.rejected {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+
+/* Progress */
+
+.progress {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+
+/* Completed */
+
+.completed {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+
+/* ==============================
+   ORDER DETAILS GRID
+================================ */
+
+.order-details {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 14px;
+
+  margin-bottom: 24px;
+}
+
+
+/* ==============================
+   INDIVIDUAL DETAIL
+================================ */
+
+.order-detail {
+  display: flex;
+  flex-direction: column;
+
+  gap: 6px;
+
+  padding: 16px 17px;
+
+  background: #f8fafc;
+
+  border: 1px solid #eef2f7;
+
+  border-radius: 12px;
+
+  min-width: 0;
+}
+
+
+/* Label */
+
+.detail-label {
+  font-size: 13px !important;
+  color: #6b7280 !important;
+
+  margin: 0 !important;
+
+  font-weight: 500;
+
+  line-height: 1.4;
+}
+
+
+/* Value */
+
+.order-detail strong {
+  font-size: 15px;
+
+  color: #1f2937;
+
+  font-weight: 600;
+
+  line-height: 1.45;
+
+  word-break: break-word;
+}
+
+
+/* ==============================
+   STATUS MESSAGE
+================================ */
+
+.order-status-message {
+  margin-top: 5px;
+  padding: 15px 17px;
+
+  border-radius: 12px;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  line-height: 1.5;
+}
+
+
+/* Waiting */
+
+.waiting-message {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+
+/* Success */
+
+.success-message {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+
+/* Rejected */
+
+.rejected-message {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+
+/* ==============================
+   REJECTION REASON
+================================ */
+
+.rejection-reason {
+  margin-top: 8px;
+  padding-top: 8px;
+
+  border-top: 1px solid rgba(220, 38, 38, 0.15);
+
+  font-size: 13px;
+}
+
+
+/* ==============================
+   PICKUP ADDRESS
+================================ */
+
+.order-address {
+  margin-top: 16px;
+
+  padding: 16px 17px;
+
+  background: #f8fafc;
+
+  border: 1px solid #eef2f7;
+
+  border-radius: 12px;
+}
+
+.order-address .detail-label {
+  display: block;
+  margin-bottom: 7px !important;
+}
+
+.order-address p {
+  margin: 0 !important;
+
+  font-size: 15px !important;
+
+  color: #374151 !important;
+
+  line-height: 1.5;
+}
+
+
+/* ==============================
+   NO ORDERS
+================================ */
+
+.no-orders {
+  max-width: 600px;
+
+  margin: 30px auto;
+
+  padding: 55px 30px;
+
+  text-align: center;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.06);
+}
+
+.no-orders-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.no-orders h2 {
+  margin: 0 0 10px;
+
+  font-size: 24px;
+
+  color: #111827;
+}
+
+.no-orders p {
+  margin: 0;
+
+  font-size: 16px;
+
+  color: #6b7280;
+}
+
+
+/* ==============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 700px) {
+
+  .orders-page {
+    padding: 40px 20px;
+  }
+
+  .orders-header h1 {
+    font-size: 34px;
+  }
+
+  .order-card {
+    padding: 22px;
+  }
+
+  .order-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-details {
+    grid-template-columns: 1fr;
+  }
+
+  .status {
+    align-self: flex-start;
+  }
+}

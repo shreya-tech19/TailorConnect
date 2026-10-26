@@ -1,0 +1,600 @@
+.place-order-page {
+    min-height: 100vh;
+    background: #f7f7f5;
+    padding: 40px 24px 80px;
+  }
+  
+  .order-page-header {
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .order-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #8a5a44;
+    margin-bottom: 8px;
+  }
+  
+  .order-page-header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #222;
+  }
+  
+  .order-page-header p {
+    color: #777;
+  }
+  
+  .order-availability {
+    background: #e9f8ef;
+    color: #237b42;
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-weight: 600;
+  }
+  
+  .order-stepper {
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid #e5e5e5;
+  }
+  
+  .step {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #aaa;
+    font-size: 13px;
+  }
+  
+  .step-number {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+  }
+  
+  .step.active {
+    color: #222;
+  }
+  
+  .step.active .step-number {
+    background: #222;
+    color: white;
+  }
+  
+  .order-layout {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 330px;
+    gap: 25px;
+  }
+  
+  .order-form-card,
+  .order-summary {
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #e5e5e5;
+    padding: 30px;
+  }
+  
+  .order-step-content h2 {
+    margin-top: 0;
+    color: #222;
+  }
+  
+  .step-description {
+    color: #777;
+    margin-bottom: 25px;
+  }
+  
+  .order-step-content label {
+    display: block;
+    margin: 18px 0 8px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .order-step-content textarea,
+  .order-step-content input,
+  .order-step-content select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    font-size: 14px;
+  }
+  
+  .choice-grid,
+  .garment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .choice,
+  .garment {
+    padding: 14px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .choice.selected,
+  .garment.selected {
+    background: #222;
+    color: white;
+    border-color: #222;
+  }
+  
+  .selected-design {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 25px;
+    padding: 15px;
+    background: #f7f7f5;
+    border-radius: 12px;
+  }
+  
+  .selected-design img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .selected-design small,
+  .summary-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #8a5a44;
+  }
+  
+  .selected-design h3 {
+    margin: 5px 0;
+  }
+  
+  .selected-design p {
+    margin: 0;
+    color: #777;
+  }
+  
+  .step-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .next-btn,
+  .submit-btn,
+  .back-btn {
+    padding: 13px 20px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .next-btn,
+  .submit-btn {
+    background: #222;
+    color: white;
+    border: none;
+  }
+  
+  .next-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .back-btn {
+    background: white;
+    border: 1px solid #ddd;
+  }
+  
+  .measurement-choice {
+    display: grid;
+    gap: 12px;
+  }
+  
+  .measurement-option {
+    display: flex !important;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  
+  .measurement-option.selected {
+    border-color: #222;
+    background: #f7f7f5;
+  }
+  
+  .measurement-option input {
+    width: auto;
+  }
+  
+  .measurement-option strong,
+  .measurement-option span {
+    display: block;
+  }
+  
+  .measurement-option span {
+    color: #777;
+    font-size: 13px;
+    margin-top: 4px;
+  }
+  
+  .measurement-box,
+  .measurement-assistance,
+  .info-box {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f7f7f5;
+    border-radius: 12px;
+  }
+  
+  .measurement-box h3,
+  .measurement-assistance h3 {
+    margin-top: 0;
+  }
+  
+  .measurement-box p {
+    color: #777;
+  }
+  
+  .measurement-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .review-section {
+    border: 1px solid #eee;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .review-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .review-row:last-child {
+    border-bottom: none;
+  }
+  
+  .review-row span {
+    color: #777;
+  }
+  
+  .review-row strong {
+    text-align: right;
+  }
+  
+  .review-design {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 15px;
+    background: #f7f7f5;
+    border-radius: 12px;
+  }
+  
+  .review-design img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .order-summary {
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+  }
+  
+  .order-summary > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin: 10px 0 15px;
+  }
+  
+  .order-summary h2 {
+    margin-bottom: 10px;
+  }
+  
+  .order-summary > p {
+    color: #777;
+  }
+  
+  .summary-available {
+    background: #e9f8ef;
+    color: #237b42;
+    padding: 10px;
+    border-radius: 9px;
+    margin-top: 15px;
+    font-size: 13px;
+  }
+  
+  .summary-design {
+    margin-top: 20px;
+  }
+  
+  .summary-design small {
+    display: block;
+    color: #8a5a44;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  
+  .summary-design img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .summary-note {
+    margin-top: 20px;
+    padding: 13px;
+    background: #f7f7f5;
+    border-radius: 10px;
+    color: #666;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  
+  .order-loading,
+  .order-unavailable {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7f7f5;
+  }
+  
+  .unavailable-card {
+    background: white;
+    padding: 40px;
+    max-width: 450px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #eee;
+  }
+  
+  .unavailable-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #fcebea;
+    color: #c0392b;
+    font-size: 22px;
+  }
+  
+  .unavailable-card p {
+    color: #777;
+    line-height: 1.6;
+  }
+  
+  .unavailable-card button {
+    border: none;
+    background: #222;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 900px) {
+    .order-layout {
+      grid-template-columns: 1fr;
+    }
+  
+    .order-summary {
+      position: static;
+    }
+  
+    .design-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .order-page-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+    }
+  
+    .order-page-header h1 {
+      font-size: 28px;
+    }
+  
+    .order-stepper {
+      overflow-x: auto;
+      justify-content: flex-start;
+      gap: 25px;
+    }
+  
+    .step {
+      min-width: 130px;
+    }
+  
+    .choice-grid,
+    .garment-grid,
+    .measurement-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+/* ===== REVIEW ORDER UI ===== */
+
+.order-form-card .review-section {
+  background: #ffffff;
+  border: 1px solid #e8e4df;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 22px 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.order-form-card .review-section h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #292524;
+  margin: 0 0 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #eee9e4;
+}
+
+.order-form-card .review-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f3f0ed;
+}
+
+.order-form-card .review-row:last-child {
+  border-bottom: none;
+}
+
+.order-form-card .review-row span {
+  color: #78716c;
+  font-size: 14px;
+  flex: 0 0 42%;
+}
+
+.order-form-card .review-row strong {
+  color: #292524;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.order-form-card .info-box {
+  background: #f5f3ff;
+  color: #5145a0;
+  border: 1px solid #e9e5ff;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 18px 0;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.order-form-card .step-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.order-form-card .step-actions .back-btn,
+.order-form-card .step-actions .submit-btn {
+  border-radius: 10px;
+  padding: 13px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.order-form-card .step-actions .back-btn {
+  background: #ffffff;
+  color: #44403c;
+  border: 1px solid #d6d3d1;
+}
+
+.order-form-card .step-actions .submit-btn {
+  background: #292524;
+  color: #ffffff;
+  border: 1px solid #292524;
+}
+
+.order-form-card .step-actions .submit-btn:hover {
+  background: #44403c;
+}
+
+.order-form-card .review-design {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid #e8e4df;
+  border-radius: 12px;
+  margin-top: 18px;
+}
+
+.order-form-card .review-design img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .order-form-card .review-section {
+    padding: 16px;
+  }
+
+  .order-form-card .review-row {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .order-form-card .review-row span {
+    flex-basis: auto;
+  }
+
+  .order-form-card .review-row strong {
+    text-align: left;
+  }
+
+  .order-form-card .step-actions {
+    flex-wrap: wrap;
+  }
+
+  .order-form-card .step-actions button {
+    flex: 1;
+  }
+}

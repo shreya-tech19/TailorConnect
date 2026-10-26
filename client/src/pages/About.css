@@ -1,0 +1,541 @@
+/* =====================================================
+   ABOUT PAGE
+===================================================== */
+
+.about-page {
+    background: #fffdfb;
+    color: #30242a;
+  }
+  
+  
+  /* =====================================================
+     COMMON
+  ===================================================== */
+  
+  .section-label {
+    display: block;
+    margin-bottom: 16px;
+  
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #a95a70;
+  }
+  
+  
+  /* =====================================================
+     INTRO
+  ===================================================== */
+  
+  .about-intro {
+    padding: 90px 7% 85px;
+    background: #fffdfb;
+    border-bottom: 1px solid #f0e4e4;
+  }
+  
+  .about-intro-inner {
+    max-width: 1250px;
+    margin: auto;
+  
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 90px;
+    align-items: center;
+  }
+  
+  .about-intro-title span {
+    display: block;
+  
+    margin-bottom: 18px;
+  
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #a95a70;
+  }
+  
+  .about-intro-title h1 {
+    margin: 0;
+  
+    max-width: 540px;
+  
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.02;
+    font-weight: 600;
+    color: #30242a;
+  }
+  
+  .about-intro-title strong {
+    color: #bc5872;
+    font-weight: 600;
+  }
+  
+  .about-intro-content {
+    max-width: 600px;
+  }
+  
+  .about-intro-content p {
+    margin: 0 0 20px;
+  
+    font-size: 16px;
+    line-height: 1.8;
+    color: #70656b;
+  }
+  
+  .about-intro-content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  
+  /* =====================================================
+     PURPOSE
+  ===================================================== */
+  
+  .about-purpose {
+    padding: 90px 20px;
+  
+    text-align: center;
+  
+    background: #fff0f4;
+  }
+  
+  .purpose-icon {
+    width: 76px;
+    height: 76px;
+  
+    margin: 0 auto 25px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 50%;
+  
+    background: #f7c5d5;
+  
+    box-shadow:
+      0 0 0 10px rgba(247, 197, 213, 0.35),
+      0 0 0 18px rgba(247, 197, 213, 0.18);
+  
+    font-size: 28px;
+    color: #a94f68;
+  }
+  
+  .about-purpose .section-label {
+    margin-bottom: 10px;
+  }
+  
+  .about-purpose h2 {
+    margin: 0 auto 15px;
+  
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  
+  .about-purpose h2 span {
+    color: #bc5872;
+  }
+  
+  .about-purpose p {
+    max-width: 620px;
+    margin: auto;
+  
+    font-size: 15px;
+    line-height: 1.7;
+    color: #766a70;
+  }
+  
+  
+  /* =====================================================
+     SECTION HEADINGS
+  ===================================================== */
+  
+  .about-section-heading {
+    max-width: 760px;
+    margin: 0 auto 45px;
+  
+    text-align: center;
+  }
+  
+  .about-section-heading h2 {
+    margin: 0 0 15px;
+  
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.12;
+    font-weight: 600;
+  }
+  
+  .about-section-heading h2 span {
+    color: #bc5872;
+  }
+  
+  .about-section-heading p {
+    max-width: 650px;
+    margin: auto;
+  
+    font-size: 15px;
+    line-height: 1.7;
+    color: #766a70;
+  }
+  
+  
+  /* =====================================================
+     PROBLEM
+  ===================================================== */
+  
+  .about-problem {
+    padding: 90px 7%;
+    background: #fffdfb;
+  }
+  
+  .about-feature-grid {
+    max-width: 1150px;
+    margin: auto;
+  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+  
+  .about-feature-card {
+    padding: 30px;
+  
+    background: #ffffff;
+  
+    border: 1px solid #eadfe1;
+    border-radius: 14px;
+  
+    box-shadow: 0 10px 30px rgba(48, 36, 42, 0.04);
+  
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease;
+  }
+  
+  .about-feature-card:hover {
+    transform: translateY(-5px);
+  
+    box-shadow: 0 16px 35px rgba(48, 36, 42, 0.08);
+  }
+  
+  .about-card-icon {
+    width: 42px;
+    height: 42px;
+  
+    margin-bottom: 22px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 10px;
+  
+    background: #f8e5eb;
+  
+    color: #b14e6b;
+    font-size: 19px;
+  }
+  
+  .about-feature-card h3 {
+    margin: 0 0 10px;
+  
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 21px;
+  }
+  
+  .about-feature-card p {
+    margin: 0;
+  
+    font-size: 14px;
+    line-height: 1.65;
+    color: #766a70;
+  }
+  
+  
+  /* =====================================================
+     SOLUTION
+  ===================================================== */
+  
+  .about-solution {
+    padding: 90px 7%;
+    background: #fbf0f2;
+  }
+  
+  .three-columns {
+    max-width: 1150px;
+  }
+  
+  
+  /* =====================================================
+     CUSTOMER JOURNEY
+  ===================================================== */
+  
+  .about-customer {
+    padding: 90px 7%;
+    background: #fffdfb;
+  }
+  
+  .about-journey {
+    max-width: 1150px;
+    margin: auto;
+  
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .journey-item {
+    width: 220px;
+    text-align: center;
+  }
+  
+  .journey-item > span {
+    width: 42px;
+    height: 42px;
+  
+    margin: 0 auto 18px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 50%;
+  
+    background: #f7e1e7;
+    color: #b34e6b;
+  
+    font-size: 12px;
+    font-weight: 700;
+  }
+  
+  .journey-item h3 {
+    margin: 0 0 9px;
+  
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 19px;
+  }
+  
+  .journey-item p {
+    margin: 0;
+  
+    font-size: 13px;
+    line-height: 1.55;
+    color: #766a70;
+  }
+  
+  .journey-line {
+    width: 70px;
+    height: 1px;
+  
+    margin-top: 21px;
+  
+    background: #dfc8ce;
+  }
+  
+  
+  /* =====================================================
+     TRUST
+  ===================================================== */
+  
+  .about-trust {
+    padding: 90px 7%;
+    background: #fff0f4;
+  }
+  
+  .about-trust-grid {
+    max-width: 1150px;
+    margin: auto;
+  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  
+  .trust-card {
+    padding: 25px;
+  
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+  
+    background: #ffffff;
+  
+    border: 1px solid #eadfe1;
+    border-radius: 14px;
+  }
+  
+  .trust-icon {
+    width: 42px;
+    height: 42px;
+  
+    flex-shrink: 0;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 10px;
+  
+    background: #f8e5eb;
+    color: #b14e6b;
+  
+    font-size: 18px;
+  }
+  
+  .trust-card h3 {
+    margin: 2px 0 7px;
+  
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 19px;
+  }
+  
+  .trust-card p {
+    margin: 0;
+  
+    font-size: 14px;
+    line-height: 1.55;
+    color: #766a70;
+  }
+  
+  
+  /* =====================================================
+     CTA
+  ===================================================== */
+  
+  .about-cta {
+    max-width: 1150px;
+    margin: 70px auto;
+  
+    padding: 55px 60px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  
+    background: #f8e9ec;
+  
+    border-radius: 18px;
+  }
+  
+  .about-cta h2 {
+    max-width: 650px;
+  
+    margin: 0 0 12px;
+  
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.1;
+  }
+  
+  .about-cta h2 span {
+    color: #bc5872;
+  }
+  
+  .about-cta p {
+    max-width: 620px;
+  
+    margin: 0;
+  
+    font-size: 15px;
+    line-height: 1.6;
+    color: #766a70;
+  }
+  
+  .about-cta-button {
+    flex-shrink: 0;
+  
+    padding: 15px 25px;
+  
+    border-radius: 8px;
+  
+    background: #bc5872;
+    color: white;
+  
+    text-decoration: none;
+  
+    font-size: 14px;
+    font-weight: 700;
+  
+    transition:
+      transform 0.2s ease,
+      background 0.2s ease;
+  }
+  
+  .about-cta-button:hover {
+    background: #a94e67;
+    transform: translateY(-2px);
+  }
+  
+  
+  /* =====================================================
+     RESPONSIVE
+  ===================================================== */
+  
+  @media (max-width: 900px) {
+  
+    .about-intro-inner {
+      grid-template-columns: 1fr;
+      gap: 45px;
+    }
+  
+    .about-feature-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .about-trust-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .about-journey {
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+    }
+  
+    .journey-line {
+      width: 1px;
+      height: 35px;
+      margin: 0;
+    }
+  
+    .about-cta {
+      margin: 50px 20px;
+      padding: 40px 30px;
+  
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  
+  @media (max-width: 600px) {
+  
+    .about-intro,
+    .about-purpose,
+    .about-problem,
+    .about-solution,
+    .about-customer,
+    .about-trust {
+      padding: 65px 20px;
+    }
+  
+    .about-intro-title h1 {
+      font-size: 42px;
+    }
+  
+    .about-purpose h2 {
+      font-size: 30px;
+    }
+  
+    .about-feature-card {
+      padding: 25px;
+    }
+  
+    .about-cta {
+      margin: 30px 15px;
+    }
+  }
