@@ -9,7 +9,7 @@ import OrderConfirmation from "./pages/OrderConfirmation";
 import Navbar from "./components/Navbar";
 import PlaceOrder from "./pages/PlaceOrder";
 import Home from "./pages/Home";
-import Login from "./pages/Login";
+import login from "./pages/login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import TailorProfile from "./pages/TailorProfile";
